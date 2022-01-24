@@ -3,6 +3,87 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  &__inner{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 35px;
+  }
+  &__list-link{
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+    @extend %DMSans-700;
+  }
+}
+
+.user-nav{
+  display: flex;
+  align-items: center;
+  &__link{
+    position: relative;
+  }
+  &__num{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 10px;
+    color: #243f4d;
+    text-align: center;
+    line-height: 16px;
+    @extend %DMSans-400;
+
+  }
+  &__num--first{
+    top: -9px;
+    right: -10px;
+  }
+  &__num--second{
+    top: -9px;
+    right: -10px;
+  }
+  &__inner{
+    display: flex;
+    padding: 23px 72px 12px;
+    border-radius: 25px;
+    background-color: #fcd7b6;
+    margin: 0 20px 0 40px;
+  
+  }
+  &__link--translate-heart{
+    transform: translate(-28px, -4px);
+    position: relative;
+  } 
+
+  &__link--translate-heart:after{
+    position: absolute;
+    content: '';
+    background-image: url("../images/line.svg");
+    width: 1px;
+    height: 32px;
+    top: -8px;
+    right: -30px;
+
+    
+  }
+
+  &__link--translate-basket{
+    transform: translate(28px, -4px);
+  } 
+
+}
 
 
 
