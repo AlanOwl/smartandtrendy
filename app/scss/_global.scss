@@ -1,5 +1,34 @@
+html,
+body{
+  height: 100%;
+}
 
 
 body{
-
+  color: $default;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
 }
+
+.main{
+  flex-grow: 1;
+}
+
+
+a{
+  @extend %Rubik-400;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
