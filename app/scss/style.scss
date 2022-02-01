@@ -87,6 +87,21 @@
   } 
 }
 
+ .top{
+   padding: 50px 0 150px;
+   &__inner{
+     text-align: center;
+   }
+   &__title{
+     font-size: 36px;
+     line-height: 24px;
+     color: #222933;
+     @extend %Rubik-400;
+     padding-bottom: 12px;
+   }
+
+ }
+
 
 
 .top-slider{
@@ -530,15 +545,19 @@
     font-size: 12px;
     line-height: 30px;
   }
-  &-partners{
+  
+}
+
+.partner{
+   padding-bottom: 85px;
+   &-list{
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  &-bottom{
-    padding-bottom: 85px;
-  }
+   }
 }
+
+
 
 
 .footer-top{
@@ -647,5 +666,64 @@
   padding-left: 15px;
 }
 
+
+.modal{
+  max-width: 500px;
+  margin: 0 auto 195px;
+  &__label{
+    margin-bottom: 25px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+    display: block;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__error{
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__problem{
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    border: none;
+    @extend %Rubik-500;
+    font-size: 18px;
+    color: #fffefe;
+    padding: 23px 210px;
+    cursor: pointer;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 65px;
+  }
+  &__account{
+    display: block;
+    background-color: #fff;
+    border: 2px solid #a3bbc8;
+    padding: 20px 153px;
+    @extend %Rubik-500;
+    font-size: 18px;
+    color: #243f4d;
+    cursor: pointer;
+  }
+  &__inner{
+    text-align: center;
+    padding-bottom: 25px;
+  }
+}
 
 @import 'media';
