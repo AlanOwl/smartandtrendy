@@ -62,3 +62,15 @@ a{
 }
 
 
+.title-color{
+  color: #243f4d !important;
+  
+}
+
+.titlev2{
+    @extend %DMSans-700;
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    margin-bottom: 45px;
+  }
