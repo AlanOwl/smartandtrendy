@@ -726,4 +726,268 @@
   }
 }
 
+.information{
+  padding-bottom: 45px;
+  &-box{
+    margin-bottom: 70px;
+  }
+  &__item{
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 20px;
+    list-style: decimal-leading-zero;
+    padding-left: 5px;
+    
+  }
+  &__title{
+    @extend %Rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #243f4d;
+  }
+  &__text{
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+  }
+  &-box &__list{
+  padding-left: 30px;
+  }
+}
+
+.mission{
+  padding-bottom: 120px;
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box{
+    max-width: 572px;
+    width: 100%;
+    padding: 80px 10px 95px 10px;
+  }
+  &__img{
+    background-image: url('../images/mission-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 570px;
+    height: 676px;
+  }
+  &-number-list-box{
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    margin-bottom: 44px;
+  }
+  &__number{
+   @extend %DMSans-700;
+    font-size: 140px;
+    line-height: 32px;
+    color: #a3bbc8;
+    margin-right: 30px;
+    margin-bottom: 32px;
+    
+  }
+  &__list-item{
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+  }
+  &__text{
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 95px;
+  }
+  &__box-item{
+    @extend %DMSans-700;
+    font-size: 36px;
+    line-height: 38px;
+    color: #243f4d;
+  }
+  &__box-title{
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+    padding-left: 5px;
+  }
+  &__box-inner{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__box-num{
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  &__box-item{
+    position: relative;
+  }
+  &__box-inner--projects::before{
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 8px;
+    background-image: url('../images/icons/projects.svg');
+    width: 36px;
+    height: 37px;
+  }
+  &__box-inner--revenue::before{
+    position: absolute;
+    content: '';
+    left: -59px;
+    top: 5px;
+    background-image: url('../images/icons/revenue.svg');
+    width: 43px;
+    height: 39px;
+  }
+  &__box-inner--awards::before{
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 7px;
+    background-image: url('../images/icons/awards.svg');
+    width: 42px;
+    height: 40px;
+  }
+  &__box-inner--awards{
+    margin-right: -10px;
+  }
+}
+
+.achievements{
+  width: 100%;
+  background-color: #fcd7b6;
+  margin-bottom: 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 84px 10px 70px;
+  }
+  &__percent{
+    font-size: 36px;
+    line-height: 32px;
+    @extend %DMSans-700;
+    color: #243f4d;
+    margin-bottom: 18px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+    @extend %DMSans-700;
+    color: #243f4d;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  &__img{
+    margin-bottom: 20px;
+  }
+
+}
+
+  .team{
+    padding-bottom: 180px;
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__inner-info{
+      max-width: 300px;
+      width: 100%;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 30px;
+      color: #243f4d;
+      @extend %Rubik-400;
+      margin-bottom: 40px;
+    }
+    &__join{
+      padding: 20px 67px 20px 25px;
+      color: #ffffff;
+      background-color: #a3bbc8;
+      border: none;
+      border-radius: 5px;
+      @extend %DMSans-700;
+      font-size: 15px;
+      line-height: 55px;
+      position: relative;
+
+    }
+    &__join::after{
+      content: '';
+      position: absolute;
+      top: 40%;
+      right: 26px;
+      width: 15px;
+      height: 11px;
+      background-image: url('../images/team/arrow.svg')
+    }
+    &__inner-box{
+      max-width: 770px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 102px;
+      grid-column-gap: 30px;
+    }
+    &__card{
+      position: relative;
+    }
+    &__card-bottom{
+      position: absolute;
+      background-color: #fff;
+      bottom: -60px;
+      max-width: 327px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 0 25px 25px;
+      max-height: 110px;
+    }
+    &__item-name{
+      @extend %DMSans-700;
+      font-size: 22px;
+      line-height: 26px;
+      color: #436372;
+      margin-bottom: 5px;
+    }
+    &__item-text{
+      @extend %Rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #565872;
+    }
+    &__item-social{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      max-width: 125px;
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 @import 'media';
