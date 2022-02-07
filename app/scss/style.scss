@@ -981,12 +981,306 @@
     }
   }
 
+  .shop{
+    &__inner{
+      display: flex;
+    }
+    &__filters{
+      max-width: 270px;
+      width: 100%;
+      margin-right: 30px;
+    }
+    &__title{
+      font-size: 18px;
+      @extend %DMSans-700;
+      color: #243f4d;
+      margin-bottom: 35px;
+      position: relative;
+      text-transform: uppercase;
+      &::after{
+        content: '';
+        position: absolute;
+        background-image: url('../images/line-title.svg');
+        width: 38px;
+        height: 2px;
+        margin-left: 13px;
+        top: 50%;
 
+      }
+    }
+  }
+  .filter__category{
+    margin-bottom: 70px;;
+  }
 
+  .category__select{
+    display: block;
+    // margin-right: 12px;
+  }
 
+  .jq-selectbox__select {
+    height: 43px;
+    padding: 0 45px 0 13px;
+    border: none;
+    background: transparent;
+    color: #243f4d;
+    text-shadow: none;
+    @extend %Rubik-400;
+    &:hover{
+      background: transparent;
+    }
+  }
 
+  .jq-selectbox__trigger{
+    border-left: none;
+  }
+  .jq-selectbox__select-text{
+    font-size: 16px;
+    @extend %Rubik-400;
+  }
 
+  .jq-selectbox__trigger-arrow{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 6px;
+    height: 10px;
+    border: none;
+    background-image: url('../images/angle-right.svg');
+    background-repeat: no-repeat;
+}
 
+.irs--flat .irs-line {
+    top: 6px;
+    height: 3px;
+    background-color: #c2d2db;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.irs--flat .irs-handle {
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: #a3bbc8;
+    cursor: pointer;
+}
+
+.irs--flat .irs-handle>i:first-child{
+  display: none;
+}
+
+.irs--flat .irs-bar {
+    top: 6px;
+    height: 4px;
+    background-color: #a3bbc8;
+    cursor: pointer;
+}
+.irs{
+  
+  .irs-from, .irs-to, .irs-single {
+   display: none;
+  }
+  .irs-from::before{
+    display: none;
+  }
+  .irs-to::before{
+    display: none;
+  }
+}
+
+.irs-min{
+  display: none;
+}
+
+.irs-max{
+  display: none;
+}
+
+.filter-price{
+  margin-bottom: 75px;
+}
+
+.filter-price__label{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.filter-price__from{
+  color: #243f4d;
+   font-size: 14px;
+   @extend %Rubik-400;
+   
+  
+}
+
+.filter-price__to{
+  color: #243f4d;
+   font-size: 14px;
+   @extend %Rubik-400;
+ 
+}
+
+.filter-price__inner{
+  color: #243f4d;
+   font-size: 14px;
+   @extend %Rubik-400;
+
+}
+
+.filter-brand{
+  margin-bottom: 65px;
+  &__label{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+
+  &__form{
+    line-height: normal;
+    font-size: 16px;
+    color: #243f4d;
+    @extend %Rubik-400;
+    margin: 0 25px 0 15px;
+  }
+ 
+  &__input{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    &:checked +.filter-brand__checbox{
+      color: #243f4d;
+    }
+  }
+  &__checbox{
+    margin-left: -10px;
+  }
+  &__box{
+    color: #b3b3b3;
+  }
+}
+
+.filter-recent{
+  &__item{
+    display: flex;
+    
+  }
+  &__inner{
+    width: 70px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
+  &__title{
+    margin-bottom: 10px;
+    
+  
+  }
+  &__box{
+    line-height: 16px;
+    font-size: 14px;
+    color: #333333;
+    @extend %Rubik-400;
+    margin-bottom: 25px;
+  }
+}
+
+.jq-ry-container{
+  padding: 0px;
+}
+
+.star{
+    display: flex;
+    margin-bottom: 12px;
+  }
+  .shop-content{
+    padding: 80px 0 108px 20px;
+  }
+  .shop-content__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product-list{
+    &__item{
+      display: flex;
+      margin-bottom: 198px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+    &__wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 115px;
+    }
+    &__inner{
+      margin-right: 84px;
+      max-width: 324px;
+      width: 100%;
+      max-height: 361px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title{
+      line-height: 26px;
+      font-size: 40px;
+      color: #333333;
+      @extend %Rubik-400;
+      margin-bottom: 25px;
+    }
+    &__price{
+      line-height: 45px;
+      font-size: 30px;
+      color: #333333;
+      @extend %Rubik-400;
+      margin-bottom: 18px;
+    }
+    &__text{
+      line-height: 30px;
+      font-size: 16px;
+      color: #243f4d;
+      @extend %Rubik-400;
+      padding-bottom: 35px;
+      max-width: 458px;
+    }
+    &__star{
+      margin-bottom: 28px;
+    }
+    &__btn{
+      line-height: 30px;
+      font-size: 15px;
+      color: #fff;
+      @extend %Rubik-400;
+      background-color: #a3bbc8;
+      border: none;
+      border-radius: 5px;
+      padding: 9px 56px;
+      cursor: pointer;
+      text-transform: uppercase
+    }
+    &__link-box{
+      display: flex;
+    }
+    &__link{
+      border-radius: 0;
+    }
+    &__pagination{
+      justify-content: flex-start;
+    }
+  }
 
 
 
