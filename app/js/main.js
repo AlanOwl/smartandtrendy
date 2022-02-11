@@ -1,5 +1,34 @@
 $(function() {
 
+  $('.pagination__link').on('click', function (e) {
+    $('.pagination__link').removeClass('pagination__link--active');
+    $(this).addClass('pagination__link--active');
+  });
+
+
+
+
+  
+  $('.related__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev slick-btn"><img src="../images/slider/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next slick-btn"><img src="../images/slider/arrow-next.svg" alt=""></button>',
+  });
+
+
+  $('.productdetalis-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.productdetalis-tabs__top-item').removeClass('productdetalis-tabs__top-item--active');
+    $(this).addClass('productdetalis-tabs__top-item--active');
+
+    $('.productdetalis-tabs__content-item').removeClass('productdetalis-tabs__content-item--active');
+    $($(this).attr('href')).addClass('productdetalis-tabs__content-item--active');
+
+
+  });
 
 
   $('.productdetalis-slide__thumb').slick({
@@ -76,4 +105,7 @@ $(function() {
 
   var mixer = mixitup('.products__content');
   var mixer = mixitup('.newdesign__content');
+
+
+
 })
