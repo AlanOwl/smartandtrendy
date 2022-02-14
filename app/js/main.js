@@ -1,11 +1,18 @@
 $(function() {
 
+
+
+
+  $('.blog-one__comments-input').on('click', function (e) {
+    $('.blog-one__comments-input').removeClass('blog-one__comments-input--active');
+    $(this).addClass('blog-one__comments-input--active');
+  });
+
+
   $('.pagination__link').on('click', function (e) {
     $('.pagination__link').removeClass('pagination__link--active');
     $(this).addClass('pagination__link--active');
   });
-
-
 
 
   
