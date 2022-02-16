@@ -61,6 +61,13 @@ a{
   }
 }
 
+.title{
+  text-align: center;
+  @extend %DMSans-700;
+  font-size: 36px;
+  color: #191919;
+  padding-bottom: 25px;
+}
 
 .title-color{
   color: #243f4d !important;

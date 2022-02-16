@@ -1,0 +1,79 @@
+.top-slider{
+  background-image: url('../images/slider/background-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 225px 300px 60px;
+  &__title{
+    max-width: 500px;
+    @extend %Rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__text{
+    max-width: 370px;
+    color: #436372;
+    @extend %Rubik-400;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  &__link{
+    border: none;
+    background-color: #a3bbc8;
+    padding: 23px 100px 21px 28px;
+    color: #e6edf0;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %Rubik-500;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    
+  }
+  &__link::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/arrow.svg');
+    width: 22px;
+    height: 9px;
+    bottom: 40%;
+    right: 18px;
+  }
+  &__img{
+    padding-top: 50px;
+    
+   
+  }
+  .slick-dots{
+    margin-top: 205px;
+    display: flex;
+    justify-content: center;
+    li{
+      margin-right: 12px;
+      button{
+        font-size: 10px;
+        padding: 0;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        
+        color: #667983;
+        @extend %Rubik-500;
+      }
+      &.slick-active{
+        button{
+          background-color: #ffffff;
+          color: #243f4d;
+        }
+      }
+    }
+  }
+}
