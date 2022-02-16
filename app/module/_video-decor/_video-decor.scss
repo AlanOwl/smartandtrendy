@@ -1,0 +1,16 @@
+  .video-decor{
+  padding: 15px 0 120px;
+  &__popup{
+    background-image: url('../images/popup-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

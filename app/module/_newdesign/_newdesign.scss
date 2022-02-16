@@ -1,0 +1,47 @@
+.newdesign__content{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  }
+  .newdesign-box{
+    top: 0;
+    position: absolute;
+  }
+
+  .newdesign-item__img-box{
+    height: 246px;
+    
+    position: relative;
+    overflow: hidden;
+  }
+
+  .newdesign__title{
+    font-size: 20px;
+    @extend %DMSans-700;
+    color: #191919;
+    max-width: 171px;
+    margin-top: 30px;
+    
+  }
+
+  .newdesign-item{
+    max-width: 370px;
+    width: 100%;
+  }
+
+  .newdesign__price{
+    font-size: 16px;
+    @extend %DMSans-700;
+    color: #a3bbc8;
+    
+  }
+
+  .newdesign-box__img{
+    margin-top: 10px;
+  }
+
+  .newdesign-box__img-chair{
+    margin-left: 200px;
+    margin-top: 58px;
+  }
