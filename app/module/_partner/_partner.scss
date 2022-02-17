@@ -6,3 +6,28 @@
     justify-content: space-around;
    }
 }
+
+
+
+
+
+@media (max-width: 920px){
+  .partner-list{
+    flex-wrap: wrap;
+  }
+  .partners__item{
+    margin: 20px 35px;
+  }
+}
+
+@media (max-width: 620px){
+  .partner {
+    padding-bottom: 0px;
+}
+}
+
+@media (max-width: 560px){
+  .partners__item{
+    margin: 20px 20px;
+  }
+}
