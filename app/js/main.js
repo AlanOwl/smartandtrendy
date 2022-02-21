@@ -1,5 +1,10 @@
 $(function() {
 
+  $('.shop__filter-btn').on('click', function(){
+    $('.shop__filters').slideToggle();
+  });
+
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active')
   });
@@ -30,6 +35,22 @@ $(function() {
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev slick-btn"><img src="../images/slider/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next slick-btn"><img src="../images/slider/arrow-next.svg" alt=""></button>',
+    responsive: [{
+      breakpoint: 621,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 431,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      }
+    ]
   });
 
 
@@ -60,6 +81,13 @@ $(function() {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [{
+      breakpoint: 921,
+      settings: {
+        draggable : true,
+      }
+    },
+  ]
   });
 
 

@@ -56,3 +56,22 @@
     padding-bottom: 25px;
   }
 }
+
+@media (max-width: 560px){
+  .top {
+    padding: 50px 0 100px;
+  }
+  .modal{
+    margin: 0 auto 105px;
+  }
+  .modal__btn {
+    padding: 19px 120px;
+    max-width: 468px;
+    width: 100%;
+  }
+  .modal__account{
+    max-width: 468px;
+    width: 100%;
+    padding: 17px 63px
+  }
+}
